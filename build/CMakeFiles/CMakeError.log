@@ -1,0 +1,34 @@
+Determining if the CL_VERSION_2_0 exist failed with the following output:
+Change Dir: F:/Kouluhommat/mpsp/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_ab43d/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_ab43d.dir\build.make CMakeFiles/cmTC_ab43d.dir/build
+mingw32-make.exe[1]: Entering directory 'F:/Kouluhommat/mpsp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ab43d.dir/CheckSymbolExists.c.obj
+C:\MinGW\bin\gcc.exe  @CMakeFiles/cmTC_ab43d.dir/includes_C.rsp  -o CMakeFiles\cmTC_ab43d.dir\CheckSymbolExists.c.obj   -c F:\Kouluhommat\mpsp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+F:\Kouluhommat\mpsp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c: In function 'main':
+F:\Kouluhommat\mpsp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c:8:19: error: 'CL_VERSION_2_0' undeclared (first use in this function)
+   return ((int*)(&CL_VERSION_2_0))[argc];
+                   ^
+F:\Kouluhommat\mpsp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+CMakeFiles\cmTC_ab43d.dir\build.make:65: recipe for target 'CMakeFiles/cmTC_ab43d.dir/CheckSymbolExists.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_ab43d.dir/CheckSymbolExists.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'F:/Kouluhommat/mpsp/build/CMakeFiles/CMakeTmp'
+Makefile:125: recipe for target 'cmTC_ab43d/fast' failed
+mingw32-make.exe: *** [cmTC_ab43d/fast] Error 2
+
+File F:/Kouluhommat/mpsp/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v9.2/include/CL/cl.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef CL_VERSION_2_0
+  return ((int*)(&CL_VERSION_2_0))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+

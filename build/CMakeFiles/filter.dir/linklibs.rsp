@@ -1,0 +1,1 @@
+ -LC:/PROGRA~1/NVIDIA~2/CUDA/v9.2/lib/Win32/OpenCL.lib "C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v9.2/lib/Win32/OpenCL.lib" -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
